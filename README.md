@@ -1,2 +1,3 @@
 # Task1HybridCloud
-A quite challenging task using Terraform
+
+Task: To create/launch application using Terraform.
