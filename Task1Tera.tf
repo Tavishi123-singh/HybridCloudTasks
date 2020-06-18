@@ -283,7 +283,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   provisioner "remote-exec" {
     inline = [
       "sudo su << EOF",
-      "echo \"<img src='http://${self.domain_name}/${aws_s3_bucket_object.buck_obj.key}' height='200px' width='200px'>\" >> /var/www/html/index.html",
+      "echo \"<img src='http://${self.domain_name}/${aws_s3_bucket_object.buck_obj.key}' height='200px' width='200px'>\" >> /var/www/html/index.php",
       "EOF",
     ]
   }
