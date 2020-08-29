@@ -65,6 +65,17 @@ Note: Wordpress instance has to be part of public subnet so that our client can 
 mysql instance has to be part of private  subnet so that outside world can't connect to it.
 Don't forgot to add auto ip assign and auto dns name assignment option to be enabled.
 
+# task-6
+Deploy the Wordpress application on Kubernetes and AWS using terraform including the following steps:
+
+1. Write an Infrastructure as code using terraform, which automatically deploy the Wordpress application
+
+2. On AWS, use RDS service for the relational database for Wordpress application.
+
+3. Deploy the Wordpress as a container either on top of Minikube or EKS or Fargate service on AWS
+
+4. The Wordpress application should be accessible from the public world if deployed on AWS or through workstation if deployed on Minikube.
+
 # Getting Started:
 1. Clone this repo.
 1. Download and install [aws-cli-v2](https://awscli.amazonaws.com/AWSCLIV2.msi) place it somewhere and add the exact path to the `PATH` environment variable.
